@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>test chrome manifest v3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noarchive" />
+    <meta http-equiv="cache-control" content="no-transform" />
+    <meta http-equiv="cache-control" content="no-siteapp" />
+
+    <noscript> 请启用javascript 功能 </noscript>
+    <style>
+      body {
+        font-family: Roboto Mono, serif;
+      }
+      .container {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: #31c27c;
+        margin-right: 4rem;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>测试 chromium extensions manifest v3</h1>
+
+    <h2>请打开dev-tools 测试控制台查看结果</h2>
+    <h2>加载的CSS javascript 如下列表</h2>
+    <h2>添加自定义规则</h2>
+    <div class="wrap">
+      <div class="container">
+        <div class="old-rule-list"></div>
+        <section class="box">
+          <input maxlength="500" />
+          <button type="submit">提交规则</button>
+        </section>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://source.chromium.org/" target="_blank"
+              >source.chromium.org</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://summerofcode.withgoogle.com/programs/2022/organizations"
+              target="_blank"
+              >summerofcode.withgoogle.com</a
+            >
+          </li>
+          <li>
+            <a href="https://cs.opensource.google/" target="_blank"
+              >cs.opensource.google</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      console.log(chrome);
+      /*
+    chrome.runtime.sendMessage({
+        "rule_name":'cutom_01',
+        "rule_content":[],
+        "namespace": "gsxt"
+    }, function(response) {
+        console.log(response);
+    });
+
+     */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-06-03T20:28:47+08:00",
+  "id": "replace-google-frontend-cdn",
+  "duration": 5,
+  "title": "浏览器扩展 ReplaceGoogleCDN 的使用",
+  "summary": "ReplaceGoogleCDN",
+  "source": "codelab.md",
+  "theme": "",
+  "status": ["published"],
+  "category": ["codelab", "markdown"],
+  "tags": ["web"],
+  "feedback": "A link where users can go to provide feedback (https://github.com/justjavac/ReplaceGoogleCDN/issues)",
+  "url": "replace-google-frontend-cdn"
+}

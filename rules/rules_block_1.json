@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*",
+      "requestDomains": [
+        "collector.github.com",
+        "www.google-analytics.com",
+        "play.google.com",
+        "accounts.google.com",
+        "adservice.google.com"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other"
+      ]
+    }
+  }
+]
