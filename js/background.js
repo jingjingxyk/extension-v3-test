@@ -1,3 +1,5 @@
+import * as content_menus from '/js/context-menus.js'
+
 async function getCurrentTab() {
   let queryOptions = { active: true, lastFocusedWindow: true };
   // `tab` will either be a `tabs.Tab` instance or `undefined`.
@@ -24,12 +26,8 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
 
   }
 
+  content_menus.menus()
 
-  chrome.contextMenus.create({
-    id: "sampleContextMenu",
-    title: "Sample Context Menu",
-    contexts: ["selection"],
-  });
 
 
   chrome.tabs.create(
@@ -112,6 +110,8 @@ chrome.tabs.onCreated.addListener((tab) => {
 chrome.tabs.onActivated.addListener(async(activeInfo) => {
   console.log("chrome.tabs.onActivated do nothing ");
   console.log(activeInfo)
+
+
 
   let tab = await getCurrentTab();
   /*
@@ -255,9 +255,7 @@ chrome.declarativeNetRequest.updateDynamicRules(
 
  */
 
-chrome.contextMenus.onClicked.addListener((info, tab) => {
-  console.log(info, tab);
-});
+
 
 //importScripts("fuse.js", "background.js");
 
@@ -284,3 +282,5 @@ chrome.declarativeNetRequest.updateDynamicRules({
 chrome.runtime.openOptionsPage((w)=>{
     console.log(w)
 })
+
+content_menus.menus_listen_app()
