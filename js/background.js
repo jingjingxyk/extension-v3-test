@@ -31,11 +31,7 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
     contexts: ["selection"],
   });
 
-
-
-});
-
-chrome.runtime.openOptionsPage((w)=>{
+  /*
   chrome.tabs.create(
       {
         url: chrome.runtime.getURL("/ui/index.html"),
@@ -44,8 +40,28 @@ chrome.runtime.openOptionsPage((w)=>{
         console.log(tab);
       }
   );
-    }
-)
+  */
+  chrome.declarativeNetRequest.getEnabledRulesets((rulesetIds) => {
+    console.log(rulesetIds);
+  });
+  chrome.declarativeNetRequest.getSessionRules(
+      (rules) => {
+        console.log(rules);
+      }
+  )
+  chrome.declarativeNetRequest.getDynamicRules(
+      (rules) => {
+        console.log(rules);
+      }
+  )
+  chrome.declarativeNetRequest.getAvailableStaticRuleCount(
+      (count) => {
+        console.log(count);
+      }
+  )
+
+})
+
 
 
 chrome.runtime.onStartup.addListener(async (reason) => {
@@ -260,3 +276,6 @@ chrome.declarativeNetRequest.updateDynamicRules({
 })
 
  */
+chrome.runtime.openOptionsPage((w)=>{
+    console.log(w)
+})

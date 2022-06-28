@@ -127,12 +127,18 @@ sh  startup-local-test-web-server.sh
 16. [declarativeNetRequest 的 ManifestV3 示例](https://52sbl.cn/discussion/1754.html)
 17. [Proxy_Auto-Configuration_PAC_file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
 18. [use fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
-19. [ReplaceGoogleCDN](https://github.com/justjavac/ReplaceGoogleCDN.git)
-20. [chromium use proxy](https://www.chromium.org/developers/design-documents/network-settings/)
-21. [depot_tools](https://chromium.googlesource.com/chromium/tools/depot_tools.git)
-22. [puppeteer](https://github.com/puppeteer/puppeteer.git)
-23. [chrome-devtools-protocol](https://github.com/ChromeDevTools/awesome-chrome-devtools#chrome-devtools-protocol)
-24. [pyppeteer](https://github.com/pyppeteer/pyppeteer.git)
+19. [chromium use proxy](https://www.chromium.org/developers/design-documents/network-settings/)
+20. [depot_tools](https://chromium.googlesource.com/chromium/tools/depot_tools.git)
+21. [puppeteer](https://github.com/puppeteer/puppeteer.git)
+22. [chrome-devtools-protocol](https://github.com/ChromeDevTools/awesome-chrome-devtools#chrome-devtools-protocol)
+23. [pyppeteer](https://github.com/pyppeteer/pyppeteer.git)
+24. [ReplaceGoogleCDN](https://github.com/justjavac/ReplaceGoogleCDN.git)
+25. [ReplaceGoogleCDN test example](https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test)
+26. [ReplaceGoogleCDN 依赖 公共 CDN 静态资源库 ](https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test)
+27. [中文域名 punycode标准编码](https://en.wikipedia.org/wiki/Punycode)
+
+> 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
+
 
 ## 启动 chromium
 
