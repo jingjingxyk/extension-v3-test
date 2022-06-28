@@ -38,7 +38,7 @@
     },
     "condition": {
       "isUrlFilter": false,
-      "urlFilter": "*.com",
+      "urlFilter": "*",
       "requestDomains": [
         "ajax.googleapis.com",
         "fonts.googleapis.com",

@@ -9,7 +9,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://([\\w|-]+?)\\.(\\w+?)/(.*?)",
+      "regexFilter": "^https?://([\\w|-]+?)\\.(\\w+?)/(.*?)",
       "requireCapturing": true,
       "requestDomains": [
         "you-get.org",
@@ -47,7 +47,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
+      "regexFilter": "^https?://([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
       "requestDomains": [
         "chromium.org",
         "www.gravatar.com",
@@ -88,7 +88,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
+      "regexFilter": "^https?://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
       "requestDomains": ["grimoireoss-pa.clients6.google.com"],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
       "resourceTypes": [
@@ -120,7 +120,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
+      "regexFilter": "^https?://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
       "requestDomains": ["google.com"],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
       "resourceTypes": [
@@ -152,7 +152,7 @@
       }
     },
     "condition": {
-      "regexFilter": "^https://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
+      "regexFilter": "^https?://([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.([\\w|-]+?)\\.(\\w+?)/(.*?)",
       "requestDomains": ["google.com"],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
       "resourceTypes": [

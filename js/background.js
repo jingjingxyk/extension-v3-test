@@ -35,13 +35,15 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
   chrome.tabs.create(
       {
         // url: `https://www.marxists.org/`
-         url: `https://www.marxists.org/chinese/marx/capital/index.htm`
-        // url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
+        // url: `https://www.marxists.org/chinese/marx/capital/index.htm`
+         url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
+        // url: `https://stackoverflow.com/tags/socat/hot?filter=all`
       },
       (tab) => {
         console.log(tab);
       }
   );
+
 
 
   chrome.declarativeNetRequest.getEnabledRulesets((rulesetIds) => {

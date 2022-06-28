@@ -22,6 +22,5 @@ ${__DIR__}/chromium-browser/chromium/chrome \
 --enable-extensions \
 --auto-open-devtools-for-tabs \
 --load-extension=${__DIR__}/ \
-https://www.marxists.org/ \
-https://stackoverflow.com/tags/socat/hot?filter=all
+https://www.marxists.org/
 
