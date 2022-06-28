@@ -136,7 +136,7 @@ sh  startup-local-test-web-server.sh
 25. [webrtc/samples](https://github.com/webrtc/samples.git)
 26. [ReplaceGoogleCDN](https://github.com/justjavac/ReplaceGoogleCDN.git)
 27. [ReplaceGoogleCDN test example](https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test)
-28. [ReplaceGoogleCDN 依赖 公共 CDN 静态资源库 ](https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test)
+28. [ReplaceGoogleCDN 依赖 公共 CDN 静态资源库 ](https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/rules)
 29. [中文域名 punycode标准编码](https://en.wikipedia.org/wiki/Punycode)
 30. [latest chromium ](https://download-chromium.appspot.com/)
 31. [latest firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
