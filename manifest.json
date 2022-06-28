@@ -31,7 +31,7 @@
     "default_title": "自定义规则第一版雏形"
   },
   "sandbox": {
-    "pages": ["action.html", "ui/index.html"]
+    "pages": ["ui/*"]
   },
   "options_ui": {
     "page": "ui/index.html",
