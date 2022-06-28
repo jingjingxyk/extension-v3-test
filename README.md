@@ -139,6 +139,7 @@ sh  startup-local-test-web-server.sh
 28. [中文域名 punycode标准编码](https://en.wikipedia.org/wiki/Punycode)
 29. [latest chromium ](https://download-chromium.appspot.com/)
 30. [latest firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
+31. [正则表达式 - 元字符](https://www.runoob.com/regexp/regexp-metachar.html)
 
 > 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
 

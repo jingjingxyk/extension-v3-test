@@ -54,7 +54,7 @@
         "maxcdn.bootstrapcdn.com",
         "www.google.com"
       ],
-      "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
+      "excludedRequestDomains": ["proxy.xiaoshuogeng.com","fonts.googleapis.com"],
       "resourceTypes": [
         "main_frame",
         "sub_frame",
