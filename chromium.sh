@@ -22,4 +22,6 @@ ${__DIR__}/chromium-browser/chromium/chrome \
 --enable-extensions \
 --auto-open-devtools-for-tabs \
 --load-extension=${__DIR__}/ \
-https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test
+https://www.marxists.org/ \
+https://stackoverflow.com/tags/socat/hot?filter=all
+

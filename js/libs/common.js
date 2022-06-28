@@ -75,6 +75,18 @@ async function getCameraSelection() {
     return await navigator.mediaDevices.enumerateDevices();
 }
 
+function createJSONFile(content, filename) {
+    let blob = new Blob([JSON.stringify(content)], {type: "application/json"});
+    let url = window.URL.createObjectURL(blob);
+    let a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = filename;
+    a.click();
+    setTimeout(function () {
+        window.URL.revokeObjectURL(url);
+    }, 3000);
+}
 
 export {
     encodeBase64,
@@ -87,5 +99,6 @@ export {
     getParameterValue,
     getHashValue,
     sleep,
-    getCameraSelection
+    getCameraSelection,
+    createJSONFile
 }

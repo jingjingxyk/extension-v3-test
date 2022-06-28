@@ -31,16 +31,19 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
     contexts: ["selection"],
   });
 
-  /*
+
   chrome.tabs.create(
       {
-        url: chrome.runtime.getURL("/ui/index.html"),
+        // url: `https://www.marxists.org/`
+         url: `https://www.marxists.org/chinese/marx/capital/index.htm`
+        // url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
       },
       (tab) => {
         console.log(tab);
       }
   );
-  */
+
+
   chrome.declarativeNetRequest.getEnabledRulesets((rulesetIds) => {
     console.log(rulesetIds);
   });

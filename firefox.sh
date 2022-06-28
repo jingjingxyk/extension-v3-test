@@ -12,4 +12,4 @@ if [ ! -d $user_data_dir ] ;then
 fi
 
 
-./firefox --profile $dir
+./firefox --profile $dir https://www.marxists.org/ https://stackoverflow.com/tags/socat/hot?filter=all
