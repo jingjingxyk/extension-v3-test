@@ -103,7 +103,7 @@
 
 ```shell
 
-sh  extension/test/extension-v3-test/startup-local-test-web-server.sh
+sh  startup-local-test-web-server.sh
 
 ```
 
@@ -111,14 +111,28 @@ sh  extension/test/extension-v3-test/startup-local-test-web-server.sh
 
 1. [extensions declare_permissions ](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)
 2. [extensions webRequest](https://developer.chrome.com/docs/extensions/reference/webRequest/#event-onHeadersReceived)
-3. [trusted_types_on_webui](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/trusted_types_on_webui.md)
-4. [Content-Security-Policy/trusted-types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
-5. [gerrit](https://gerrit.googlesource.com/gerrit)
-6. [chromium](https://www.chromium.org)
-7. [chromium source code](https://chromium.googlesource.com/)
-8. [chromium project](https://source.chromium.org/chromium)
-9. [opensource.google all projects ](https://cs.opensource.google/)
-10. [declarativeNetRequest 的 ManifestV3 示例](https://52sbl.cn/discussion/1754.html)
+3. [extensions proxy](https://developer.chrome.com/docs/extensions/reference/proxy/)
+4. [contextMenus](https://developer.chrome.com/docs/extensions/reference/contextMenus//docs/extensions/reference/contextMenus/)
+5. [declarativeNetRequest ResourceType](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-ResourceType)
+6. [trusted_types_on_webui](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/trusted_types_on_webui.md)
+7. [content_scripts](https:////developer.chrome.com/docs/extensions/mv3/content_scripts/)
+8. [Content-Security-Policy/trusted-types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
+9. [gerrit](https://gerrit.googlesource.com/gerrit)
+10. [chromium](https://www.chromium.org)
+11. [chromium source code](https://chromium.googlesource.com/chromium/src/+/main/docs/get_the_code.md)
+12. [chromium.googlesource](https://chromium.googlesource.com/chromium/src)
+13. [chromium project](https://source.chromium.org/chromium)
+14. [Browse or Search Chromium Code](https://source.chromium.org/chromium)
+15. [opensource.google all projects ](https://cs.opensource.google/)
+16. [declarativeNetRequest 的 ManifestV3 示例](https://52sbl.cn/discussion/1754.html)
+17. [Proxy_Auto-Configuration_PAC_file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
+18. [use fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
+19. [ReplaceGoogleCDN](https://github.com/justjavac/ReplaceGoogleCDN.git)
+20. [chromium use proxy](https://www.chromium.org/developers/design-documents/network-settings/)
+21. [depot_tools](https://chromium.googlesource.com/chromium/tools/depot_tools.git)
+22. [puppeteer](https://github.com/puppeteer/puppeteer.git)
+23. [chrome-devtools-protocol](https://github.com/ChromeDevTools/awesome-chrome-devtools#chrome-devtools-protocol)
+24. [pyppeteer](https://github.com/pyppeteer/pyppeteer.git)
 
 ## 启动 chromium
 
@@ -138,3 +152,4 @@ export PROXY_URL=http://127.0.0.1:8015
 sh  build-prepare-codelab.sh
 
 ```
+
