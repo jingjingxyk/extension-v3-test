@@ -141,10 +141,11 @@ sh  startup-local-test-web-server.sh
 30. [latest chromium ](https://download-chromium.appspot.com/)
 31. [latest firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)
 32. [正则表达式 - 元字符](https://www.runoob.com/regexp/regexp-metachar.html)
-32. [HTTP请求方法对照表](http://www.yunjson.com/httprequest/)
-32. [Array.from()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-32. [Promise.all()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
-32. [Array() 构造器](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+33. [HTTP请求方法对照表](http://www.yunjson.com/httprequest/)
+34. [Array.from()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+35. [Promise.all()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+36. [Array() 构造器](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)
+37. [ MutationObserver 监视对 DOM 树更改](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver)
 
 > 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
 
