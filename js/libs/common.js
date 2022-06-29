@@ -29,14 +29,17 @@ function removeClass(el, className) {
 }
 
 function getCookie(name) {
-    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
-    if (arr = document.cookie.match(reg)) {
+    let arr,
+        reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+    if ((arr = document.cookie.match(reg))) {
         return decodeURIComponent(arr[2]);
     } else {
         return null;
     }
-
+    //await cookieStore.get({name:name})
 }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
 
 function setCookie(name, value, second, domain) {
     var exp = new Date();
@@ -51,6 +54,12 @@ function setCookie(name, value, second, domain) {
         domain +
         ";SameSite=None;Secure";
 }
+
+async function getCookies(domain) {
+    let cookies = await cookieStore.getAll({domain: domain});
+    return cookies;
+}
+
 function getParameterValue(name) {
 
     var reg = new RegExp("[^\?&]?" + encodeURIComponent(name) + "=[^&]+");
@@ -62,7 +71,7 @@ function getParameterValue(name) {
 }
 
 function getHashValue(name) {
-    let matches = location.hash.match(new RegExp(encodeURIComponent(name)+'=([^&]*)'));
+    let matches = location.hash.match(new RegExp(encodeURIComponent(name) + '=([^&]*)'));
     return matches ? decodeURIComponent(matches[1]) : null;
 }
 
@@ -70,10 +79,10 @@ async function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-
-async function getCameraSelection() {
+async function getMediaDevices() {
     return await navigator.mediaDevices.enumerateDevices();
 }
+
 
 function createJSONFile(content, filename) {
     let blob = new Blob([JSON.stringify(content)], {type: "application/json"});
@@ -88,6 +97,40 @@ function createJSONFile(content, filename) {
     }, 3000);
 }
 
+const toPromise = (callback) => {
+    const promise = new Promise((resolve, reject) => {
+        try {
+            callback(resolve, reject);
+        } catch (err) {
+            reject(err);
+        }
+    });
+    return promise;
+}
+
+
+let fetchAll = async (urls = [], callback) => {
+    let len = urls.length;
+    const arr = Array.from(
+        new Array(len), (x, i) => {
+            console.log(i)
+            return callback(urls[i]);
+        }
+    );
+    return await Promise.all(arr);
+}
+let getContent = async (url) => {
+    let response = await fetch(url);
+    return await response.json()
+}
+
+
+// new URLSearchParams
+// new URL
+// (new Date()).toISOString()
+
+//Deprecated abandoned independent
+
 export {
     encodeBase64,
     decodeBase64,
@@ -96,9 +139,13 @@ export {
     removeClass,
     getCookie,
     setCookie,
+    getCookies,
     getParameterValue,
     getHashValue,
     sleep,
-    getCameraSelection,
-    createJSONFile
+    getMediaDevices,
+    createJSONFile,
+    toPromise,
+    fetchAll,
+    getContent
 }
