@@ -123,13 +123,25 @@ let getContent = async (url) => {
     let response = await fetch(url);
     return await response.json()
 }
-
+function o(i) {
+    return i ? decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + i + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || "" : void 0
+}
+function e(i, t, o, e, s, n) {
+    return !i || /^(?:expires|max\-age|path|domain|secure)$/i.test(i) ? !1 : (document.cookie = encodeURIComponent(i) + "=" + encodeURIComponent(t) + (o ? "; expires=" + o : "") + (s ? "; domain=" + s : "") + (e ? "; path=" + e : "") + (n ? "; secure" : ""),
+        !0)
+}
 
 // new URLSearchParams
 // new URL
 // (new Date()).toISOString()
 
 //Deprecated abandoned independent
+
+// const start = performance.now();
+
+// const time  = performance.now()-start;
+
+
 
 export {
     encodeBase64,
