@@ -50,7 +50,8 @@ function setCookie(name, value, second, domain) {
         encodeURIComponent(value) +
         ";expires=" +
         exp.toGMTString() +
-        ";path=/;domain=" +
+        ";path=" + path +
+        ";domain=" +
         domain +
         ";SameSite=None;Secure";
 }
