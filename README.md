@@ -7,7 +7,7 @@
 1. [chromium ](https://www.chromium.org/)
 2. [source.chromium](https://source.chromium.org/)
 2. [summerofcode.withgoogle](https://summerofcode.withgoogle.com/programs/2022/organizations)
-2. [cs.opensource.google](https://cs.opensource.google/)
+2. [Google 开放源代码](https://cs.opensource.google/)
 
 
 ## 一：manifest.json declarative_net_reques 高级配置示例
