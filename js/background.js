@@ -28,14 +28,43 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
 
   content_menus.menus()
 
-
-
   chrome.tabs.create(
       {
         // url: `https://www.marxists.org/`
         // url: `https://www.marxists.org/chinese/marx/capital/index.htm`
          url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
         // url: `https://stackoverflow.com/tags/socat/hot?filter=all`
+      },
+      (tab) => {
+        console.log(tab);
+      }
+  );
+    chrome.tabs.create(
+        {
+            url: `https://www.chromium.org/`
+        },
+        (tab) => {
+            console.log(tab);
+        }
+    );
+    chrome.tabs.create(
+      {
+        url: `https://source.chromium.org/`
+      },
+      (tab) => {
+        console.log(tab);
+      }
+  );  chrome.tabs.create(
+      {
+        url: `https://summerofcode.withgoogle.com/programs/2022/organizations`
+      },
+      (tab) => {
+        console.log(tab);
+      }
+  );
+  chrome.tabs.create(
+      {
+        url: `https://cs.opensource.google/`
       },
       (tab) => {
         console.log(tab);
@@ -92,11 +121,12 @@ chrome.runtime.onStartup.addListener(async (reason) => {
      */
 });
 
+/*
 chrome.runtime.onRestartRequired.addListener((e)=>{
       console.log(e,'-------------33333333[')
     }
 )
-
+*/
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === "complete" && /^http/.test(tab.url)) {
@@ -279,8 +309,9 @@ chrome.declarativeNetRequest.updateDynamicRules({
 })
 
  */
+/*
 chrome.runtime.openOptionsPage((w)=>{
     console.log(w)
 })
-
+*/
 content_menus.menus_listen_app()
