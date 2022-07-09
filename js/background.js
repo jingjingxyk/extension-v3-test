@@ -21,7 +21,12 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
     console.log(chrome.runtime.getURL("js/tools/myscript-tools.js"))
  */
 
-  console.log(reason)
+    /*
+    chrome.runtime.id                        --> "firefox@ghostery.com"
+    chrome.i18n.getMessage("@@extension_id")
+    */
+
+    console.log(reason)
   if (reason === chrome.runtime.OnInstalledReason.INSTALL) {
 
   }

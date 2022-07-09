@@ -71,6 +71,22 @@
 
      */
       console.log(chrome.runtime)
+
+
+    </script>
+    <script>
+      window.addEventListener("message", receiveMessage, false);
+
+      function receiveMessage(event)
+      {
+        // For Chrome, the origin property is in the event.originalEvent
+        // object.
+        // 这里不准确，chrome 没有这个属性
+        // var origin = event.origin || event.originalEvent.origin;
+        var origin = event.origin
+        console.log(origin)
+        // ...
+      }
     </script>
   </body>
 </html>

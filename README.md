@@ -159,8 +159,8 @@ sh  startup-local-test-web-server.sh
 40. [Promise.all()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 41. [Array() 构造器](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)
 42. [ MutationObserver 监视对 DOM 树更改](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver)
+43. [内容安全策略(CSP) ](https://content-security-policy.com/)
 
-> 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
 
 
 ## 八： 启动 chromium
@@ -183,3 +183,5 @@ sh  build-prepare-codelab.sh
 
 ```
 
+## 十： 域名
+> 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
