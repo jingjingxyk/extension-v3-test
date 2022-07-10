@@ -15,7 +15,8 @@
         "you-get.org",
         "opensource.google",
         "chromium.org",
-        "opensource.google"
+        "opensource.google",
+        "webrtc.org"
       ],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
       "resourceTypes": [
@@ -56,7 +57,8 @@
         "googlesource.com",
         "apis.google.com",
         "opensource.googleblog.com",
-        "summerofcode.withgoogle.com"
+        "summerofcode.withgoogle.com",
+        "www.webrtc.org"
       ],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
       "resourceTypes": [
