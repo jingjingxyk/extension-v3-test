@@ -28,6 +28,18 @@ function removeClass(el, className) {
     }
 }
 
+function trim(str) { //删除左右两端的空格
+    return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+function ltrim(str) { //删除左边的空格
+    return str.replace(/(^\s*)/g, "");
+}
+
+function rtrim(str) { //删除右边的空格
+    return str.replace(/(\s*$)/g, "");
+}
+
 function getCookie(name) {
     let arr,
         reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
@@ -41,7 +53,7 @@ function getCookie(name) {
 
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
 
-function setCookie(name, value, second, domain) {
+function setCookie(name, value, second, path, domain) {
     var exp = new Date();
     exp.setTime(exp.getTime() + second * 1000);
     document.cookie =
@@ -124,24 +136,49 @@ let getContent = async (url) => {
     let response = await fetch(url);
     return await response.json()
 }
-function o(i) {
-    return i ? decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + i + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || "" : void 0
+
+let post_request_builder = (url, params) => {
+    console.log(url, params)
+    params = JSON.stringify(params)
+    let source = fakePost.toString().replace(/(\n|\t)/gm, '').replace(/\s\s/gm, ' ');
+    return `javascript:${source}; fakePost('${url}', ${params});`
+
+};
+
+function fakePost(url, params) {
+    var form = document.createElement("form");
+    form.setAttribute("action", url);
+    form.setAttribute("method", "post");
+    form.setAttribute("enctype", 'application/x-www-form-urlencoded');
+
+    for (let key in params) {
+        let hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", "hidden");
+        hiddenField.setAttribute("name", key);
+        hiddenField.setAttribute("value", params[key]);
+        form.appendChild(hiddenField);
+    }
+    document.body.appendChild(form);
+    form.submit();
 }
-function e(i, t, o, e, s, n) {
-    return !i || /^(?:expires|max\-age|path|domain|secure)$/i.test(i) ? !1 : (document.cookie = encodeURIComponent(i) + "=" + encodeURIComponent(t) + (o ? "; expires=" + o : "") + (s ? "; domain=" + s : "") + (e ? "; path=" + e : "") + (n ? "; secure" : ""),
-        !0)
+
+function getRandomBytes() {
+    const rndArray = new Uint8Array(44);
+    window.crypto.getRandomValues(rndArray);
+    return rndArray;
 }
 
-// new URLSearchParams
-// new URL
-// (new Date()).toISOString()
+function buf2Base64(buffer) {
+    return btoa(String.fromCharCode.apply(null, new Uint8Array(buffer)))
+        .replace(/\+/g, '-')
+        .replace(/\//g, '_')
+        .replace(/=/g, '');
+}
 
-//Deprecated abandoned independent
-
-// const start = performance.now();
-
-// const time  = performance.now()-start;
-
+async function windowSha256(buffer) {
+    let bytes = new TextEncoder().encode(buffer)
+    return await window.crypto.subtle.digest('SHA-256', bytes);
+}
 
 
 export {
@@ -150,6 +187,9 @@ export {
     hasClass,
     addClass,
     removeClass,
+    trim,
+    ltrim,
+    rtrim,
     getCookie,
     setCookie,
     getCookies,
@@ -160,5 +200,6 @@ export {
     createJSONFile,
     toPromise,
     fetchAll,
-    getContent
+    getContent,
+    post_request_builder
 }

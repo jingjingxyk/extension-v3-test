@@ -161,7 +161,8 @@ sh  startup-local-test-web-server.sh
 41. [Array() 构造器](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)
 42. [ MutationObserver 监视对 DOM 树更改](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver)
 43. [内容安全策略(CSP) ](https://content-security-policy.com/)
-
+44. [汉字 Unicode 编码范围](https://www.qqxiuzi.cn/zh/hanzi-unicode-bianma.php)
+44. [汉字字符集编码查询](https://www.qqxiuzi.cn/bianma/zifuji.php)
 
 
 ## 八： 启动 chromium
