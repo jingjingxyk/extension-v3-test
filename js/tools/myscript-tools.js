@@ -7,6 +7,10 @@ document.body.contentEditable = "true";
 //or
 document.documentElement.setAttribute("contenteditable", "true");
 
+//javascript:document.body.contentEditable='true';document.designMode='on';
+
+//javascript:document.body.contentEditable='false';document.designMode='off';
+
 // DOM节点 变动监听器
 /*
 
