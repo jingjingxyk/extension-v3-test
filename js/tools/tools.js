@@ -28,5 +28,11 @@ let test_performance = () => {
   document.body.append(element);
 };
 
-let app = () => {};
+let app = () => {
+  const start = performance.now();
+
+  const time  = performance.now()-start;
+  console.log('花费时间:'+time)
+
+};
 export { app, test_send_message, test_performance };
