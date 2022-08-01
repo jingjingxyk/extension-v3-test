@@ -5,3 +5,5 @@ tools/auto-update-auth-token.sh
 replace-google-frontend-cdn
 tools/claat-linux-amd64
 dist/
+js/tools/get_url_ip.js
+js/tools/tmp.js
