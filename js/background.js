@@ -37,7 +37,8 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
       {
         // url: `https://www.marxists.org/`
         // url: `https://www.marxists.org/chinese/marx/capital/index.htm`
-         url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
+         //url: `https://github.com/justjavac/ReplaceGoogleCDN/tree/master/extension/test`
+         url: `https://chromium.googlesource.com/chromium/src`
         // url: `https://stackoverflow.com/tags/socat/hot?filter=all`
       },
       (tab) => {
@@ -47,6 +48,14 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
     chrome.tabs.create(
         {
             url: `https://www.chromium.org/`
+        },
+        (tab) => {
+            console.log(tab);
+        }
+    );
+    chrome.tabs.create(
+        {
+            url: `https://webrtc.googlesource.com/src`
         },
         (tab) => {
             console.log(tab);

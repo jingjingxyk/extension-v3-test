@@ -34,7 +34,7 @@
     "pages": ["ui/*"]
   },
   "options_ui": {
-    "page": "ui/index.html",
+    "page": "options_ui/index.html",
     "open_in_tab": true
   },
   "web_accessible_resources": [{
