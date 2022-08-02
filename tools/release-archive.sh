@@ -28,6 +28,11 @@ zip -r ./dist/extension-v3-test.zip . \
   -x "./LICENSE" \
   -x "./manifest-save.json" \
   -x "./dist/*" \
+  -x "./js/tools/*" \
+  -x "./js/background-2.js" \
+  -x "./js/content-scripts/about-blank.js" \
+  -x "./js/myscript.js" \
+  -x "./.gitignore" \
   -x "./README.md"
 
 
