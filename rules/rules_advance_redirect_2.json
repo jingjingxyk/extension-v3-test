@@ -60,7 +60,10 @@
         "summerofcode.withgoogle.com",
         "www.webrtc.org"
       ],
-      "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
+      "excludedRequestDomains": [
+        "proxy.xiaoshuogeng.com",
+        "www.chromium.org"
+      ],
       "resourceTypes": [
         "main_frame",
         "sub_frame",

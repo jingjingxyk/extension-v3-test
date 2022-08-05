@@ -11,7 +11,7 @@
     "condition": {
       "regexFilter": "^https?://(\\w+?)\\.(\\w+?)/(.*?)",
       "requestDomains": ["github.com"],
-      "excludedRequestDomains": ["proxy.xiaoshuogeng.com"],
+      "excludedRequestDomains": ["proxy.xiaoshuogeng.com","github.com"],
       "resourceTypes": [
         "main_frame",
         "sub_frame",
@@ -54,7 +54,7 @@
         "maxcdn.bootstrapcdn.com",
         "www.google.com"
       ],
-      "excludedRequestDomains": ["proxy.xiaoshuogeng.com","fonts.googleapis.com"],
+      "excludedRequestDomains": ["proxy.xiaoshuogeng.com","fonts.googleapis.com","www.google.com"],
       "resourceTypes": [
         "main_frame",
         "sub_frame",
