@@ -51,17 +51,17 @@
         "path": "rules/auth.json"
       },
       {
-        "id": "remove-header",
+        "id": "remove-content-security-policy",
         "enabled": true,
-        "path": "rules/rules_remove_header_1.json"
+        "path": "rules/rules_remove_content_security_policy_header.json"
       },
       {
-        "id": "ruleset_redirect_1",
+        "id": "ruleset_advance_redirect_1",
         "enabled": true,
         "path": "rules/rules_advance_redirect_1.json"
       },
       {
-        "id": "ruleset_redirect_2",
+        "id": "ruleset_advance_redirect_2",
         "enabled": true,
         "path": "rules/rules_advance_redirect_2.json"
       },
@@ -73,7 +73,7 @@
       {
         "id": "block",
         "enabled": true,
-        "path": "rules/rules_block_1.json"
+        "path": "rules/rules_block_request.json"
       }
     ]
   }
