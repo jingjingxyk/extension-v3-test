@@ -37,3 +37,6 @@ Chrome 104 支持硬解 HEVC 了
 添加下面这个启动参数就可以了 open /Applications/Google\ Chrome.app --args --enable-features=PlatformHEVCDecoderSupport
 
 EOF
+
+# webrtc 监测
+# chrome://webrtc-internals/
