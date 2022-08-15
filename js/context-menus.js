@@ -61,6 +61,40 @@ let menus_listen_app = () => {
     });
 
 };
+/*
+
+
+        let source = self_browser_editor.toString().replace(/(\n|\t)/gm, '').replace(/\s\s/gm, ' ');
+        `javascript:${source};self_browser_editor('${word}');`
+        chrome.tabs.create(
+            {
+                // url: gotToGoogleSearch(info.selectionText),
+                url: 'about:blank',
+            },
+            (tab) => {
+                console.log(tab);
+
+
+                chrome.scripting.executeScript(
+                    {
+                        target: {
+                            tabId: tab.id,
+                            allFrames: true
+                        },
+                        func: self_browser_editor,
+                        args: [word],
+                       // "match_about_blank": true
+                    },
+                    (result)=>{
+                        console.log(result)
+                    }
+                )
+
+
+            }
+        );
+        return ''
+ */
 
 // POST REQUEST  reference
 // https://stackoverflow.com/questions/7387217/chrome-extension-development-post-to-new-tab

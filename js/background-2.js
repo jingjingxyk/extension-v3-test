@@ -9,6 +9,7 @@ chrome.runtime.onInstalled.addListener(async (reason) => {
             "js":['options_ui/js/app.js'],
             "css":[],
             "matches":[match_url.toString()],
+            //"match_origin_as_fallback": true,
             "runAt":'document_idle',
             "id":'9d137db6-fea6-11ec-ad70-dfa4cc9eaf2c'
         }],

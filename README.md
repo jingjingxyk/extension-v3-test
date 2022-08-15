@@ -11,6 +11,25 @@
 5. [webrtc](https://webrtc.org/)
 5. [webrtc source code](https://chromium.googlesource.com/external/webrtc)
 
+## 一句话准备一个http代理服务
+```shell
+
+
+# vi https-switch-to-http-proxy.sh
+
+
+socat -d -d   TCP4-LISTEN:8016,reuseaddr,fork ssl:http-proxy.xiaoshuogeng.com:443,verify=1,snihost=http-proxy.xiaoshuogeng.com,commonname=http-proxy.xiaoshuogeng.com,openssl-min-proto-version=TLS1.3,openssl-max-proto-version=TLS1.3
+
+
+
+# 备注： 服务端就是一个 nginx 仅此而已
+# socat 需要支持TLSv1.3 
+
+
+
+```
+## [快速下载chromium源码](https://www.cnblogs.com/jingjingxyk/p/16575572.html)
+
 ## 一：manifest.json declarative_net_reques 高级配置示例
 
 ```json
