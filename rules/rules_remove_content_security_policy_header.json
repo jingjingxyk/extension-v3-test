@@ -37,7 +37,6 @@
       ]
     },
     "condition": {
-      "isUrlFilter": false,
       "urlFilter": "*",
       "requestDomains": [
         "ajax.googleapis.com",

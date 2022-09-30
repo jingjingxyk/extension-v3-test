@@ -43,6 +43,23 @@
         </section>
     </div>
 </div>
+<a ping="https://not-example.com">
+    <script type="text/plain">
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://not-example.com/");
+        xhr.send();
+
+        const ws = new WebSocket("https://not-example.com/");
+
+        const es = new EventSource("https://not-example.com/");
+
+        navigator.sendBeacon("https://not-example.com/", {
+            /* … */
+        });
+    </script>
+</a>
+
+
 <script>
     chrome.runtime.sendMessage({
         "rule_name":'cutom_01',

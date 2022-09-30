@@ -30,6 +30,10 @@
     "default_popup": "action.html",
     "default_title": "自定义规则第一版雏形"
   },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self';script-src 'self'  'wasm-unsafe-eval'  ;object-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'https://www.jingjingxyk.com/' 'http://localhost';",
+    "sandbox": "sandbox allow-scripts; script-src 'unsafe-inline' 'unsafe-eval' "
+  },
   "sandbox": {
     "pages": ["ui/*"]
   },
