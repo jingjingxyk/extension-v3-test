@@ -9,9 +9,7 @@ __ROOT__=$(cd ${__DIR__}/../;pwd)
 cd ${__ROOT__}
 uuid=$(cat /proc/sys/kernel/random/uuid)
 user_data_dir="/tmp/${uuid}"
-if [ ! -d $user_data_dir ] ;then
-  mkdir -p  $user_data_dir
-fi
+mkdir -p  $user_data_dir
 
 cd ${__DIR__}
 
