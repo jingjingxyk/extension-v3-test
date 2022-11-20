@@ -7,4 +7,17 @@
 
 ```
 > 启动浏览器，就会向这些地方发送数据
->
+
+
+## chromium 查看APP 
+```text
+
+
+chrome://apps
+
+chrome://version
+
+启动 app 应用
+chromium  --profile-directory=Default --app-id=hgmloofddffdnphfgcellkdfbfbjeloo
+
+```
