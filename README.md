@@ -28,7 +28,7 @@ socat -d -d   TCP4-LISTEN:8016,reuseaddr,fork ssl:http-proxy.xiaoshuogeng.com:44
 
 
 ```
-## [快速下载chromium源码](https://www.cnblogs.com/jingjingxyk/p/1.html)
+## [快速下载chromium源码](https://www.cnblogs.com/jingjingxyk/p/16575572.html)
 
 ## 一：manifest.json declarative_net_reques 高级配置示例
 
@@ -199,7 +199,7 @@ sh  startup-local-test-web-server.sh
 ```shell
 
 # use proxy build
-export PROXY_URL=http://1.1.1.1:8015
+export PROXY_URL=http://127.0.0.1:8015
 sh  build-prepare-codelab.sh
 
 ```
