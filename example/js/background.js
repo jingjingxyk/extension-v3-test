@@ -24,7 +24,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
             // console.log(index,header)
             console.log(index, header.name, '=', header.value)
 
-            if (header.name.toLowerCase() === "cookie") {
+            if (header.name.toLowerCase() === "user-agent") {
 
                 let custom_window_ua_flag = urlObj.searchParams.get('custom_window_ua_flag')
                 if (custom_window_ua_flag == 1) {
@@ -34,7 +34,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
                 }
             }
 
-            if (header.name.toLowerCase() === "referer") {
+            if (0 && header.name.toLowerCase() === "referer") {
 
                 console.log(details.requestHeaders[ua_index])
                 let referer = header.value;
