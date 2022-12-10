@@ -6,11 +6,11 @@
   "content_scripts": [
     {
       "matches": ["https://fm.douban.com/*"],
-      "js": ["js/content-script.js"]
+      "js": ["js-use-cookie/content-script.js"]
     }
   ],
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": ["js-use-cookie/background.js"]
   },
   "incognito": "spanning",
   "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"]

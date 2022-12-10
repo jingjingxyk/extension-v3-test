@@ -25,10 +25,21 @@ function getCookie(name) {
 
 function set_flag() {
     let second = 365 * 24 * 60 * 60
+    let custom_window_ua_flag=getCookie('custom_window_ua_flag');
+    custom_window_ua_flag=parseInt(custom_window_ua_flag)
+    custom_window_ua_flag=isNaN(custom_window_ua_flag)?0:custom_window_ua_flag
+
     if (document.documentElement.clientWidth <= 480) {
         setCookie('custom_window_ua_flag', 1, second, '/', document.domain)
+        if( custom_window_ua_flag !==1 ) {
+            location.reload()
+        }
+
     } else {
         setCookie('custom_window_ua_flag', 0, second, '/', document.domain)
+        if( custom_window_ua_flag !==0 ) {
+            location.reload()
+        }
     }
 
 }
