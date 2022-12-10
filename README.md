@@ -143,6 +143,7 @@ sh  startup-local-test-web-server.sh
 1. [webextensions-examples](https://github.com/mdn/webextensions-examples.git)
 1. [extensions declare_permissions ](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)
 1. [extensions webRequest](https://developer.chrome.com/docs/extensions/reference/webRequest/#event-onHeadersReceived)
+1. [extensions chrome.tabs api](https://developer.chrome.com/docs/extensions/reference/tabs/)
 1. [extensions proxy](https://developer.chrome.com/docs/extensions/reference/proxy/)
 1. [contextMenus](https://developer.chrome.com/docs/extensions/reference/contextMenus//docs/extensions/reference/contextMenus/)
 1. [declarativeNetRequest ResourceType](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-ResourceType)
