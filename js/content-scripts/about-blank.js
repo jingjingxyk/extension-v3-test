@@ -1,5 +1,5 @@
 
-// import {getHashValue} from "libs/utils.js"
+// import {getHashValue} from "/third_party/jingjingxyk/frontend-utils/utils.js"
 
 
 let post_request_builder = (url, params) => {
@@ -32,7 +32,7 @@ function fakePost(url, params) {
 
 
 (async()=>{
-    let {getParameterValue,getHashValue} = await import(chrome.runtime.getURL("/libs/utils.js"));
+    let {getParameterValue,getHashValue} = await import(chrome.runtime.getURL("/third_party/jingjingxyk/frontend-utils/utils.js"));
     let keyword=getHashValue('extension-define-keyword')
     console.log(keyword)
     if(keyword){

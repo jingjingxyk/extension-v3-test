@@ -8,3 +8,5 @@ dist/
 js/tools/get_url_ip.js
 js/tools/tmp.js
 tools/chromium-browser/
+third_party/*
+!third_party/jingjingxyk
