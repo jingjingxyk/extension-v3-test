@@ -1,3 +1,15 @@
+function getCurrentTab(callback) {
+    let queryOptions = { active: true, lastFocusedWindow: true };
+    chrome.tabs.query(queryOptions, ([tab]) => {
+        if (chrome.runtime.lastError)
+            console.error(chrome.runtime.lastError);
+        // `tab` will either be a `tabs.Tab` instance or `undefined`.
+        callback(tab);
+    });
+}
+
+//https://developer.chrome.com/docs/extensions/reference/tabs/
+
 chrome.webRequest.onBeforeSendHeaders.addListener(
     (details) => {
         console.log(details)
@@ -19,7 +31,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
                 cookie_index = index;
             }
         }
-
+        getCurrentTab(console.log)
         for (const header of details.requestHeaders) {
             console.log(header.name, '=', header.value)
 
