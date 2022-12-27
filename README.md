@@ -25,6 +25,12 @@ socat -d -d   TCP4-LISTEN:8016,reuseaddr,fork ssl:http-proxy.xiaoshuogeng.com:80
 # 备注： 服务端就是一个 nginx 仅此而已
 # socat 需要支持TLSv1.3 
 
+# 使用代理
+export http_proxy=http://127.0.0.1:8016
+export https_proxy=http://127.0.0.1:8016
+export no_proxy="127.0.0.1,localhost"
+ 
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --depth=1 --progress
 
 
 ```
