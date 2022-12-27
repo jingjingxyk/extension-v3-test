@@ -18,7 +18,7 @@
 # vi https-switch-to-http-proxy.sh
 
 
-socat -d -d   TCP4-LISTEN:8016,reuseaddr,fork ssl:http-proxy.xiaoshuogeng.com:443,verify=1,snihost=http-proxy.xiaoshuogeng.com,commonname=http-proxy.xiaoshuogeng.com,openssl-min-proto-version=TLS1.3,openssl-max-proto-version=TLS1.3
+socat -d -d   TCP4-LISTEN:8016,reuseaddr,fork ssl:http-proxy.xiaoshuogeng.com:8017,verify=1,snihost=http-proxy.xiaoshuogeng.com,commonname=http-proxy.xiaoshuogeng.com,openssl-min-proto-version=TLS1.3,openssl-max-proto-version=TLS1.3
 
 
 
