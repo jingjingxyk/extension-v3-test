@@ -1,0 +1,12 @@
+{
+  "name": "通过检测窗口大小来设置URI参数",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "通过检测窗口大小来设置URI参数",
+  "content_scripts": [
+    {
+      "matches": ["https://www.jingjingxyk.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
