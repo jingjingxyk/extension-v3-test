@@ -5,8 +5,30 @@
   "description": "通过检测窗口大小来设置URI参数",
   "content_scripts": [
     {
-      "matches": ["https://www.jingjingxyk.com/*"],
-      "js": ["content-script.js"]
+      "matches": [
+        "https://www.jingjingxyk.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
     }
-  ]
+  ],
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rule.json"
+      }
+    ]
+  }
 }
