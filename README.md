@@ -1,6 +1,7 @@
 ## chromium extension v3
-> 衍生于 https://github.com/justjavac/ReplaceGoogleCDN.git 
-> 一个完整的 测试例子
+
+> 衍生于 https://github.com/justjavac/ReplaceGoogleCDN.git
+> ReplaceGoogleCDN 演示例子规则文件 位于 `rules` 目录
 
 ## 加载本扩展默认提供提供查看 chromium 、webrtc 源码功能
 
@@ -12,6 +13,7 @@
 1. [webrtc source code](https://chromium.googlesource.com/external/webrtc)
 
 ## 一句话准备一个http代理服务
+
 ```shell
 
 
@@ -34,6 +36,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --dep
 
 
 ```
+
 ## [快速下载chromium源码](https://www.cnblogs.com/jingjingxyk/p/16575572.html)
 
 ## 一：manifest.json declarative_net_reques 高级配置示例
@@ -87,7 +90,8 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --dep
 
 > `www.chromium.org` -> `https://2_www_xn--3px_chromium_xn--3px_org.proxy.domain.com`
 
-> 真实测试地址 `https://chromium.googlesource.com/chromium/tools/depot_tools.git` -> `https://2_chromium_xn--3px_googlesource_xn--3px_com.proxy.xiaoshuogeng.com/chromium/tools/depot_tools.git`
+>
+真实测试地址 `https://chromium.googlesource.com/chromium/tools/depot_tools.git` -> `https://2_chromium_xn--3px_googlesource_xn--3px_com.proxy.xiaoshuogeng.com/chromium/tools/depot_tools.git`
 
 1. [尝试 chromium ](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md)
 1. [尝试 open source software 出色的开源软件 ](https://summerofcode.withgoogle.com/programs/2022/organizations)
@@ -212,4 +216,5 @@ sh  build-prepare-codelab.sh
 ```
 
 ## 十： 域名
+
 > 域名串不允许有除“－”以外的标点符号，包括空格。 可以夹杂中文和英文。 可以输入全角英文字母，全角字母不区分大小写。
