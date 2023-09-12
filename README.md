@@ -1,7 +1,10 @@
 ## chromium extension v3
 
 > 衍生于 https://github.com/justjavac/ReplaceGoogleCDN.git
+
 > ReplaceGoogleCDN 演示例子规则文件 位于 `rules` 目录
+
+
 
 ## 加载本扩展默认提供提供查看 chromium 、webrtc 源码功能
 
