@@ -1,36 +1,5 @@
 [
   {
-    "id": 1,
-    "priority": 999,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "regexSubstitution": "https://\\1-\\2.proxy.xiaoshuogeng.com/\\3"
-      }
-    },
-    "condition": {
-      "regexFilter": "^https?://(\\w+?)\\.(\\w+?)/(.*?)",
-      "requestDomains": ["github.com"],
-      "excludedRequestDomains": ["proxy.xiaoshuogeng.com","github.com"],
-      "resourceTypes": [
-        "main_frame",
-        "sub_frame",
-        "stylesheet",
-        "script",
-        "image",
-        "font",
-        "object",
-        "xmlhttprequest",
-        "ping",
-        "csp_report",
-        "media",
-        "websocket",
-
-        "other"
-      ]
-    }
-  },
-  {
     "id": 2,
     "priority": 999,
     "action": {
