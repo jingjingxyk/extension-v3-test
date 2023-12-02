@@ -15,7 +15,7 @@
 1. [webrtc](https://webrtc.org/)
 1. [webrtc source code](https://chromium.googlesource.com/external/webrtc)
 
-## 一句话准备代理服务,用于下载 chromium 源码
+## 准备代理服务,下载 chromium 源码
 
 ```shell
 
