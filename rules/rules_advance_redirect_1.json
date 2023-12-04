@@ -19,8 +19,7 @@
         "www.gstatic.com",
         "secure.gravatar.com",
         "www.gravatar.com",
-        "maxcdn.bootstrapcdn.com",
-        "www.google.com"
+        "maxcdn.bootstrapcdn.com"
       ],
       "excludedRequestDomains": ["proxy.xiaoshuogeng.com","fonts.googleapis.com","www.google.com"],
       "resourceTypes": [
