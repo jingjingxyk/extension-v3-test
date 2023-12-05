@@ -32,7 +32,8 @@ if [ -d cdnjs ]; then
    git -C cdnjs pull --depth=1 --progress --rebase=true
 else
    # 克隆源代码
-   git clone --depth=1 --progress --filter=blob:none --sparse https://github.com/cdnjs/cdnjs.git
+   # git clone --depth=1 --progress --filter=blob:none --sparse https://github.com/cdnjs/cdnjs.git
+   git clone --depth=1 --progress  https://github.com/cdnjs/cdnjs.git
 fi
 
-
+# 参考 https://github.com/cdnjs/cdnjs/blob/master/.github/workflows/sync.yml
