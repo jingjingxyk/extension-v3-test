@@ -32,5 +32,7 @@ if [ -d cdnjs ]; then
    git -C cdnjs pull --depth=1 --progress --rebase=true
 else
    # 克隆源代码
-   git clone https://github.com/cdnjs/cdnjs.git --depth=1 --progress
+   git clone --depth=1 --progress --filter=blob:none --sparse https://github.com/cdnjs/cdnjs.git
 fi
+
+
